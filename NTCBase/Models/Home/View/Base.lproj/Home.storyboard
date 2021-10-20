@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gj2-Ut-CbY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home ScreenVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeScreenVC" id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="NTCBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="UnreaduNotify"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="88"/>
+        </scene>
+        <!--Splash Screen Controller-->
+        <scene sceneID="Ay6-2S-Efd">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenController" id="Gj2-Ut-CbY" customClass="SplashScreenController" customModule="NTCBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5vJ-oZ-qd0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klO-2L-OQj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iRf-fJ-Gq4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="klO-2L-OQj" firstAttribute="top" secondItem="iRf-fJ-Gq4" secondAttribute="top" id="5cX-GZ-DbZ"/>
+                            <constraint firstItem="klO-2L-OQj" firstAttribute="leading" secondItem="iRf-fJ-Gq4" secondAttribute="leading" id="8W6-HV-ldv"/>
+                            <constraint firstItem="iRf-fJ-Gq4" firstAttribute="bottom" secondItem="klO-2L-OQj" secondAttribute="bottom" id="Zwh-Xe-G5c"/>
+                            <constraint firstItem="iRf-fJ-Gq4" firstAttribute="trailing" secondItem="klO-2L-OQj" secondAttribute="trailing" id="ldN-it-R8F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="splashView" destination="klO-2L-OQj" id="8Fe-K6-5KX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cj0-MD-DCc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827" y="89"/>
+        </scene>
+        <!--Stats Controller-->
+        <scene sceneID="V5z-Ae-Qse">
+            <objects>
+                <viewController storyboardIdentifier="StatsController" id="IH6-cr-mih" customClass="StatsController" customModule="NTCBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anZ-tL-l5j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9XM-Gx-R0w"/>
+                        <color key="backgroundColor" name="YellowishGreen"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSX-TL-HGz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581" y="88"/>
+        </scene>
+        <!--Search Controller-->
+        <scene sceneID="RAP-2T-TM6">
+            <objects>
+                <viewController storyboardIdentifier="SearchController" id="EPx-xg-MLU" customClass="SearchController" customModule="NTCBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h7r-58-ADF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="IdC-fZ-Yci"/>
+                        <color key="backgroundColor" name="PinkColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ei1-gi-dTB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2361" y="88"/>
+        </scene>
+        <!--Profile Controller-->
+        <scene sceneID="Ysk-vZ-Nuq">
+            <objects>
+                <viewController storyboardIdentifier="ProfileController" id="btK-uv-qkI" customClass="ProfileController" customModule="NTCBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WiO-Nd-8g3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7yf-eh-t8n"/>
+                        <color key="backgroundColor" name="Primary"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NcJ-4j-T4z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3057" y="88"/>
+        </scene>
+        <!--More Screen Controller-->
+        <scene sceneID="kyv-he-lmI">
+            <objects>
+                <viewController storyboardIdentifier="MoreScreenController" id="fi7-pl-BjN" customClass="MoreScreenController" customModule="NTCBase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zkq-Gz-qPY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LyG-1v-Add"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwS-IY-qwi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3784" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PinkColor">
+            <color red="0.81568627450980391" green="0.19215686274509805" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.45098039215686275" green="0.22745098039215686" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="UnreaduNotify">
+            <color red="1" green="0.85098039215686272" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="YellowishGreen">
+            <color red="0.61960784313725492" green="0.72549019607843135" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
