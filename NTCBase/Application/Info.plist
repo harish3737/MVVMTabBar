@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Wddi</string>
+	<string>NTCBase</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -44,9 +44,10 @@
 	<string>$(PRODUCT_DISPLAY_NAME) would like to access gallery for profile Image </string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Calibri Light.ttf</string>
-		<string>Calibri Bold.TTF</string>
-		<string>Calibri Regular.ttf</string>
+		<string>Quicksand-Bold</string>
+		<string>Quicksand-Regular</string>
+		<string>Quicksand-Medium</string>
+		<string>Quicksand-Light</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

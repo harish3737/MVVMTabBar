@@ -246,7 +246,7 @@ extension UIView{
     func removeView(){
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
             self.alpha = 0.8
-            var height = self.frame.height;
+            let height = self.frame.height;
             self.frame = CGRect(x: Int(self.frame.minX), y: Int(self.superview?.frame.height ?? 0), width: Int(self.frame.maxX), height: Int(height))
         }) { _ in
             self.removeFromSuperview()
@@ -256,7 +256,7 @@ extension UIView{
     func showView(){
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
             self.alpha = 0.8
-            var height = self.frame.height;
+            let height = self.frame.height;
             self.frame = CGRect(x: Int(self.frame.minX), y: Int(self.superview?.frame.height ?? 0), width: Int(self.frame.maxX), height: Int(height))
         }) { _ in
             self.superview?.addSubview(self)
@@ -274,7 +274,7 @@ extension UIView{
     
     
     func dottedBorder(){
-        var yourViewBorder = CAShapeLayer()
+        let yourViewBorder = CAShapeLayer()
         yourViewBorder.strokeColor = UIColor.black.cgColor
         yourViewBorder.lineDashPattern = [4, 4]
         yourViewBorder.frame = self.bounds

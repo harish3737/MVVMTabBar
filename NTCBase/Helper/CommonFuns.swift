@@ -228,6 +228,27 @@ internal func createActivityIndicator(_ uiView : UIView)->UIView{
     return container
     
 }
+
+ func setFont(to field :Any,isTitle : Bool = false, size : CGFloat = 0, fontType : FontCustom = .bold) {
+    
+    let customSize = size > 0 ? size : (isTitle ? size : 14)
+    let font = UIFont(name: fontType.rawValue, size: customSize)
+    
+    switch (field.self) {
+    case is UITextField:
+        (field as? UITextField)?.font = font
+    case is UILabel:
+        (field as? UILabel)?.font = font
+    case is UIButton:
+        (field as? UIButton)?.titleLabel?.font = font
+    case is UITextView:
+        (field as? UITextView)?.font = font
+    default:
+        break
+    }
+
+}
+
 //MARK:- Initilizing Number Formatter
 private var numberFormatter : NumberFormatter?
 
@@ -261,10 +282,14 @@ private func initializeNumberFormatter(){
 //
 //
 //}
-//enum FontCustom : String {
-//
-//    case Bold = "Calibri Bold"
-//    case Light = "Calibri Light"
-//    case Regular = "Calibri Regular"
+}
+
+
+enum FontCustom : String {
+    
+    case meduim = "Quicksand-Medium"
+    case bold = "Quicksand-Bold"
+    case regular = "Quicksand-Regular"
+    case light = "Quicksand-Light"
     
 }

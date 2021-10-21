@@ -25,12 +25,19 @@ extension HomeViewModel {
         viewController.splashView.isUserInteractionEnabled = true
         viewController.splashView.addTap {
     
-            let navigationController = UINavigationController(rootViewController: TabBarController().listTabBarController())
-//                navigationController.navigationBar.isHidden = true
+            let navigationController = UINavigationController(rootViewController: TabBarController())
+                navigationController.navigationBar.isHidden = false
                 UIApplication.shared.windows.first?.rootViewController = navigationController
                 UIApplication.shared.windows.first?.makeKeyAndVisible()
         }
         
+    }
+    
+    func registerTableViewCell(viewController:HomeScreenVC){
+        viewController.homeTableView.register(UINib(nibName: XIB.HomeTableViewCell, bundle: nil), forCellReuseIdentifier: XIB.HomeTableViewCell)
+        viewController.homeTableView.delegate = viewController.self
+        viewController.homeTableView.dataSource = viewController.self
+        viewController.homeTableView.separatorStyle = .none
     }
     
 }

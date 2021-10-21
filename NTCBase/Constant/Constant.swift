@@ -22,6 +22,7 @@ struct Constant {
     static var search = "Search"
     static var profile = "Profile"
     static var more = "More"
+    
 }
 
 //MARK:- XIB Cell Names
@@ -29,6 +30,8 @@ struct Constant {
 struct XIB {
     
     static let Names = XIB()
+    static var HomeTableViewCell = "HomeTableViewCell"
+    static var CategoriesCollectionViewCell = "CategoriesCollectionViewCell"
     
 }
 
